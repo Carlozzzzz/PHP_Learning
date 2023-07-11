@@ -1,0 +1,134 @@
+Playlist - https://www.youtube.com/watch?v=Anz0ArcQ5kI&list=PL0eyrZgxdwhypQiZnYXM7z7-OTkcMgGPh&index=1
+
+## The 3 Task PHP Does:
+ * We query the database & connect to it
+ * We handle data submitted by users
+ * We show DB data to the users
+
+## Procedura VS. OOP
+    # Procedural
+     * all inside one file
+    
+    # OOP
+     * take the 3 task to separate files
+     * Controller, Model, View
+
+
+
+## Episodes
+
+### Ep1
+  * Introduction
+
+### Ep2
+  * MVC Model Explain
+
+### Ep3
+  * MVC Model Explain
+
+### Ep4
+  * Inheritance and Visivility
+
+### Ep5
+  * properties and methods
+  * able to use multiple objects with different values that are referenced on one class
+
+### Ep6
+  * Constructor and Destructor
+  * run at the beginning and the end
+  * we don't always use destructor
+  
+### Ep7
+  * Deleting Object -> unset()
+  * this will delete the object, you cannot use it anymore
+  * the destructor will run after the object has been created
+
+### Ep8
+  * Static and Methods
+  * don't need to think about allocating memory or instantiating class or creating object
+  * just reference it
+  * do I need to call this 
+
+### Ep9
+  * Autoload Classes
+  * this will allow you to autoad you class everytime you instanstiate it
+  * create an autoloader inside includes
+  * inside that autoloader create a function that will check the class validity
+  * then add that function inside spl_autoload_register(); ex: spl_autoload_register('myAutoloader');
+  * then include the autoloader inside the file where you will use your classes
+  * 
+  * When using name space
+  * just add the name of your namespace at the begening where you instantiate the class like this
+  * ex: $person = new Person\Person("Carlos", "Red", 22);
+  * the Person\ is the name space
+  * Person("Carlos", "Red", 22); is the actual class 
+
+### Ep10
+  * Type Declaration
+  * Use declare(strict_types = 1); to activate it
+  * when creating a parameter you must indicate what type is it. ex:  public function setName(string $name)
+  * then to do this, use try catch inside the file when you will use or initial the variable for this method
+
+### Ep11
+  * OOP Sample activity 
+  * this is the actual example of how to use the class and inc
+  * inc is like the controller
+  * class is like the model
+  * then my index here is the View
+  * I submitted the data to the inc.php the use the class.php to calculate it
+
+### Ep12
+  * Scope Resolution Operator == ::
+  * self::properties, self::function == when accesing properties or method inside the class
+  * parent::properties, parent::function == when accesing properties or method from the parent
+
+### Ep13
+  * Interfaces
+  * Blueprint that we used in order to group the specefic classes
+  * you can create the instance of this class
+
+### Ep14
+  * Abstract
+  * Blueprint that we used in order to group the specefic classes
+  * but the difference is that you cant create an instance of this abstract class
+
+### Ep15
+  * Anonymous Class
+  * can be use like normal but, but it is deleted after it was created
+  * you can only used the obj you created from it.
+
+  
+### Ep16
+  * Database -> PDO
+  * can support different database systms
+  * practice application
+  *
+  * set index view
+  * set db class
+  * 
+
+### Ep17
+  * Database -> PDO
+  * Fetch and Insert
+  * practice application
+  *
+  * set index view
+  * set db class
+  * 
+
+### Ep18
+  * MCV with DB (PDO)
+  * practice application
+  *
+  * 
+  * 
+  * 
+
+
+### Ep19
+  * Login System
+  * practice application
+  *
+  * create your front page (login page and signup page)
+  * set the model first ()
+  * 
