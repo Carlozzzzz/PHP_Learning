@@ -1,8 +1,0 @@
-{
-    "config": {
-        "vendor-dir": "assets/vendor"
-    },
-    "require": {
-        "axllent/jquery": "^3.7"
-    }
-}
