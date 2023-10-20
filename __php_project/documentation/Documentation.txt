@@ -1,0 +1,3 @@
+comeback - need to change
+on work - currently working process
+dubugging - testing of functions
