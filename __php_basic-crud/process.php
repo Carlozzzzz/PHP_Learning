@@ -2,7 +2,15 @@
 
 session_start();
 
-$mysqli = new mysqli('localhost', 'root', '', 'crud') or die(mysqli_error($mysqli));
+
+function custom_mysqli_connect() {
+    
+    $mysqli = new mysqli('localhost', 'root', 'root', 'crud') or die(mysqli_error($mysqli));
+
+    return $mysqli;
+}
+
+$mysqli = custom_mysqli_connect();
 
 $id = 0;
 $update = false;
