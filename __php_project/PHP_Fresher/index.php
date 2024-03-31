@@ -11,6 +11,7 @@
 <body>
     <div class="auth-msg">
         <p>This page requried <b>authentication</b> otherwise this will redirect to <b>home page</b>.</p>
+        <a href="view/login.php">Login Page</a>
     </div>
 </body>
 </html>
