@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine On
+
+Rewritebase /development/practice/PHP_Learning/_php_mvc/MVC_Structure/public/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
